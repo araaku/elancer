@@ -1,8 +1,12 @@
 
-/*
- * GET home page.
- */
+var express = require('express');
+var router = express.Router();
 
-exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
-};
+/* GET users listing. */
+router.get('/', function (req, res) {
+    res.send('index', {title: 'Expresso'})
+});
+
+
+
+module.exports = router;
